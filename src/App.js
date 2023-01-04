@@ -18,6 +18,9 @@ const theme = createTheme({
 });
 
 export default function App() {
+  React.useEffect(() => {
+    document.title = 'Kelompok 12';
+  }, []);
   return (
     <ThemeProvider theme={theme}>
       <Navbar />
