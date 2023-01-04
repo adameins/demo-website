@@ -9,7 +9,7 @@ export default function FAQContainer() {
     const [faq, setFaq] = React.useState([]);
 
     React.useEffect(() => {
-        fetch('http://127.0.0.1:8000/api/faq/')
+        fetch('https://restorankeluarga-solo.up.railway.app/api/faq/')
         .then(response => response.json())
         .then(data => setFaq(data))
     }, [])
