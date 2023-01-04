@@ -39,10 +39,6 @@ export default function Hero(){
     .then(data => setProfile(data))
   }, [])
 
-      //limit the description to 15 words max
-      const aboutUs = profile[0].about_us.split(' ');
-      const limitedAboutUs = aboutUs.slice(0, 25).join(' ');
-
   const scrollTo = (id) => {
     const menuElement = document.getElementById(id);
     window.scrollTo({
@@ -77,7 +73,7 @@ export default function Hero(){
               variant="body2"
               sx={{ fontSize: "18px", color: "#FFFFFF", my: 4 }}
             >
-              {limitedAboutUs}
+              {profile[0] && profile[0].about_us.split(' ').slice(0, 20).join(' ')}
             </Typography>
             <div onClick={() => scrollTo('faq')}>
             <HeroButton
