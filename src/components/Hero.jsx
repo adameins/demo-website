@@ -34,7 +34,7 @@ export default function Hero(){
   const [profile, setProfile] = React.useState({})
 
   React.useEffect(() => {
-    fetch('restorankeluarga-solo.up.railway.app/api/profile/')
+    fetch('https://restorankeluarga-solo.up.railway.app/api/profile/')
     .then(response => response.json())
     .then(data => setProfile(data))
   }, [])
