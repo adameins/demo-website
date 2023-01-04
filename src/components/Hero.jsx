@@ -79,7 +79,7 @@ export default function Hero(){
             >
               {limitedAboutUs}
             </Typography>
-            <div onClick={ window.alert(limitedAboutUs) }>
+            <div onClick={() => scrollTo('faq')}>
             <HeroButton
               backgroundColor="#1A1A1A"
               color="#FFFFFF"
