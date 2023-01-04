@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import FAQContainer from './components/FAQContainer';
+import AboutUs from './components/AboutUs'
 
 import FoodSvg from './components/assets/FoodSvg.jsx';
 
@@ -23,6 +24,16 @@ export default function App() {
       <div className='hero_container' id='home'>
         <Hero />
       </div>
+
+      {/* AboutUs */}
+      <h1 className='section_tittle' id='faq'>
+        <FoodSvg /> <br/>
+        <span>About Us</span>
+      </h1>
+      <div className='faq_container'>
+        <AboutUs />
+      </div>
+      <br/>
 
       {/* Menu */}
       <h1 className='section_tittle' id='menu'>
@@ -42,6 +53,7 @@ export default function App() {
         <FAQContainer />
       </div>
       <br/>
+
 
       {/* Contact Us */}
       <div className='contact_container' id='contact'>
