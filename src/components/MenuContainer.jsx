@@ -36,7 +36,9 @@ export default function MenuContainer() {
         </Grid>
       </Grid>
       <Grid container spacing={2} paddingY={3} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-      {menus.map((menu) => (
+      {menus
+       .filter((menu) => menu.category.toLowerCase() === activeButton || activeButton === "all")
+       .map((menu) => (
             <Grid item xs={9} sm={6} md={4} lg={3}>
                 <MenuCard {...menu}/>
             </Grid>
