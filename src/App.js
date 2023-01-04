@@ -30,7 +30,7 @@ export default function App() {
       </div>
 
       {/* AboutUs */}
-      <h1 className='section_tittle' id='faq'>
+      <h1 className='section_tittle' id='about'>
         <FoodSvg /> <br/>
         <span>About Us</span>
       </h1>
