@@ -7,7 +7,6 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-import { Link } from 'react-router-dom';
 import CustomDrawer from "./CustomDrawer";
 
 export default function MyNavbar(){
