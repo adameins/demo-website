@@ -13,7 +13,7 @@ import {
       const [profile, setProfile] = React.useState({});
   
       React.useEffect(() => {
-          fetch('http://127.0.0.1:8000/api/profile/')
+          fetch('https://restorankeluarga-solo.up.railway.app/api/profile/')
           .then(response => response.json())
           .then(data => setProfile(data))
       }, []);
@@ -30,7 +30,7 @@ import {
   
       const [openHours, setOpenHours] = React.useState({});
       React.useEffect(() => {
-          fetch('http://127.0.0.1:8000/api/opening-hour/')
+          fetch('https://restorankeluarga-solo.up.railway.app/api/opening-hour/')
           .then(response => response.json())
           .then(data => setOpenHours(data))
       }, []);
