@@ -27,7 +27,7 @@ export default function MyNavbar(){
 
   React.useEffect(() => {
     // Fetch the logo image from the API
-    fetch("restorankeluarga-solo.up.railway.app/api/profile/")
+    fetch("https://restorankeluarga-solo.up.railway.app/api/profile/")
       .then((response) => response.json())
       .then((data) => {
         setLogo(data[0].logo);
