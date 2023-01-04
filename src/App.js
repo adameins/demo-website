@@ -2,6 +2,7 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 
 import './App.css';
+import * as React from "react";
 import MenuContainer from './components/MenuContainer';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
