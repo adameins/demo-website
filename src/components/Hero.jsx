@@ -75,7 +75,7 @@ export default function Hero(){
             >
               {profile[0] && profile[0].about_us.split(' ').slice(0, 20).join(' ')}
             </Typography>
-            <div onClick={() => scrollTo('faq')}>
+            <div onClick={() => scrollTo('about')}>
             <HeroButton
               backgroundColor="#1A1A1A"
               color="#FFFFFF"
